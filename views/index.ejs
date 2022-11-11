@@ -2,7 +2,7 @@
 <body>
     <h1>New Project</h1>
     <input type="text" placeholder="please type" id="input1" class="input-class text-class" />
-    <button onclick="alert(document.getElementById('input1').value)" id="button1">submit</button>
+    <button onclick="alert('input: ' + document.getElementById('input1').value)" id="button1">submit</button>
     <script>
     var xhr = new XMLHttpRequest();
     xhr.open("GET","/api/photo/list");
